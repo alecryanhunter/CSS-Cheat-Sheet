@@ -1,3 +1,24 @@
-body {
-    background-color: green;
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+/* Header */
+
+header {
+    background-color: darkred;
+}
+
+/* Main */
+
+main {
+    background-color: rebeccapurple;
+    display: flex;
+}
+
+/* Footer */
+
+footer {
+    background-color:royalblue;
 }
