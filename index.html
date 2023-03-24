@@ -9,7 +9,12 @@
         <!-- Header -->
         <header>
             <h1>CSS Cheat Sheets</h1>
-            <p>Site Description</p>
+            <p>
+                Ever have trouble recalling the exact syntax for your favorite
+                CSS code? Give it a permanent home and add it to this page! 
+                Select any snippet below and it'll automatically select all of
+                the code for you to copy.
+            </p>
         </header>
 
         <!-- Main -->
@@ -21,15 +26,15 @@
                 <p>
                     Use these properties to create a Flexbox row layout.
                 </p>
-                <pre>
-                    <code>
+                <code>
+                    <pre>
 .row {
     display: flex:
     flex-direction: row;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
 }
-                    </code>
-                </pre>
+</pre>
+                </code>
             </section>
 
             <!-- Card Two -->
@@ -38,14 +43,14 @@
                 <p>
                     Use this to create a Flexbox column layout.
                 </p>
-                <pre>
-                    <code>
+                <code>
+                    <pre>
 .column {
     display: flex:
     flex-direction: column;
 }
-                    </code>
-                </pre>
+</pre>
+                </code>
             </section>
 
             <!-- Card Three -->
@@ -54,34 +59,32 @@
                 <p>
                     Build a 12-column layout using CSS Grid.
                 </p>
-                <pre>
-                    <code>
+                <code>
+                    <pre>
 .grid {
     display: grid:
     width: 100%;
     grid-template-columns:
 repeat(12, 1fr);
 }
-                    </code>
-                </pre>
-            </section>
-
-            <!-- Card Four -->
+</pre>
+                </code>
+            </section>          <!-- Card Four -->
             <section class="card">
                 <h2>Linear Gradients</h2>
                 <p>
                     This will create a background linear gradient from top to bottom.
                 </p>
-                <pre>
-                    <code>
+                <code>
+                    <pre>
 .linear-gradient-background {
     background-image: linear-gradient(
         rgba(232, 102, 236, 0.3) 0%,
         rgba(232, 102, 236, 0.6) 100%,
     );
 }
-                    </code>
-                </pre>
+</pre>
+                </code>
             </section>
 
             <!-- Card Five -->
@@ -90,8 +93,8 @@ repeat(12, 1fr);
                 <p>
                     Use transition and bow shadows to glow on hover.
                 </p>
-                <pre>
-                    <code>
+                <code>
+                    <pre>
 .code-card .card-header {
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
@@ -99,10 +102,12 @@ repeat(12, 1fr);
 
 .code-card:hover,
 .code-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+    box-shadow: inset 0px 0px 8px 
+rgba(232, 102, 236, 1), 0 0 15px 
+rgba(232, 102, 236, 1);
 }
-                    </code>
-                </pre>
+</pre>
+                </code>
             </section>
 
             <!-- Card Six -->
@@ -112,14 +117,14 @@ repeat(12, 1fr);
                     Use position properties and negative margins to raise elements
                     higher than their natural starting point.
                 </p>
-                <pre>
-                    <code>
+                <code>
+                    <pre>
 .card-header {
     position: relative;
     margin-top: -20px;
 }
-                    </code>
-                </pre>
+</pre>
+                </code>
             </section>
 
         </main>
