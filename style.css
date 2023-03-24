@@ -11,7 +11,8 @@
 
 header {
     background-color: darkred;
-    height: 15vh;
+    min-height: 15vh;
+    height: fit-content;
     padding: 10px;
 }
 
@@ -30,13 +31,14 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     min-height: 70vh;
+    padding-top: 20px;
 }
 
 /* Cards */
 
 .card {
-    margin: 20px;
-    width: 25%;
+    margin: 2% 0;
+    width: 30%;
     border: 5px solid indigo;
     border-radius: 25px;
     display: flex;
@@ -44,6 +46,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    transition: all 1s ease;
 }
 
 .card h2 {
@@ -54,7 +57,8 @@ main {
     background-color:darkorchid;
     padding: 2px 0px 2px 0px;
     width: 80%;
-    min-width: fit-content;
+    /* min-width: fit-content; */
+    flex-wrap: wrap;
 }
 
 .card p {
@@ -62,7 +66,7 @@ main {
     text-align: left;
     width: 80%;
 }
-.card code {
+.card pre {
     width: 80%;
     background-color: darkorchid;
     margin: 8px;
@@ -77,8 +81,8 @@ main {
 
 /* The code highlight bit. Needs to somehow select the text */
 
-.card pre:active {
-    color: deeppink;
+code {
+    user-select: all;
 }
 
 /* Footer */
@@ -100,7 +104,7 @@ footer {
         background-color: deeppink;
     }
     .card {
-        width: 40%;
+        width: 45%;
     }
 }
 
@@ -110,6 +114,6 @@ footer {
         background-color: aqua;
     }
     .card {
-        width: 80%;
+        width: 90%;
     }
 }
